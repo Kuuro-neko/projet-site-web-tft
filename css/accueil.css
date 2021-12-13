@@ -81,3 +81,17 @@ a {
 	cursor:pointer;
 	margin-top: 0px;
 }
+
+.contenu {
+  align-items: flex-start;
+  bottom:0;
+  color:#EDB852;
+  display:flex;
+  flex-wrap:wrap;
+  font-family:sans-serif;
+  justify-content:center;
+  left:0;
+  padding:20vw;
+  right:0
+  top:0;
+}

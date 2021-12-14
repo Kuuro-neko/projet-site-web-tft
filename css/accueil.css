@@ -95,3 +95,19 @@ a {
   right:0
   top:0;
 }
+
+footer {
+	display: flex;
+  text-align: center;
+  padding: 3px;
+  background-color: #13181B;
+  color: white;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footerText {
+		color: #EDB852;
+	font-size: 16px;
+	font-family: arial;
+}

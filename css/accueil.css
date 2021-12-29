@@ -21,9 +21,6 @@ li {
 /* Menu fixe */
 
 .navbar {
-	/*
-	display: flex;
-	justify-content: space-between; */
 	background-color: #092539;
 	height: 90px;
 	position: fixed;
@@ -40,8 +37,6 @@ li {
 	height: 100%;
 }
 
-
-/*Início das configurações da Navigation*/
 .menu {
 	display: flex;
 	align-items: center;
@@ -65,9 +60,6 @@ li {
 }
 .menu ul a {
 	width: auto;
-
-
-
 	color: #EDB852;
 	padding: 30px 20px 20px 10px;
 	margin-left: 10px;
@@ -123,8 +115,6 @@ footer {
 		max-height: 0;
 		overflow: hidden;
 		transition: max-height 0.3s;
-		/*Para fazer com que o menu saia da esquerda, você deve trocar max-height por max-width*/
-		/*Para fazer com que o menu saia da direita, você deve trocar max-height por max-width e setar float: right*/
 	}
 
 	.menu ul a {
@@ -156,7 +146,7 @@ footer {
 	}
 
 	#menuToggle:checked ~ ul {
-		max-height: 350px;
+		max-height: 600px;
 	}
 	.menu-icon img {
 		margin:auto;

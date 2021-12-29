@@ -14,8 +14,15 @@ a {
 	text-decoration: none;
 }
 
+li {
+	text-decoration: none;
+}
+
 /* Menu fixe */
-.parent {
+
+.navbar {
+	background-color: #092539;
+	height: 90px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -23,62 +30,69 @@ a {
 	width: 100%;
 }
 
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	background-color: #092539;
-	height: 90px;
-}
-
 .logo {
 	padding: 20px;
+	width: auto;
+	float: left;
+	height: 100%;
 }
 
 .menu {
 	display: flex;
 	align-items: center;
+	width: auto;
+	height: 100%;
+	float: right;
+	margin-top: 10px;
 }
-
 .menu ul {
-	display: flex;
-	justify-content: flex-end;
+	width: 100%;
+	height: inherit;
+	margin: 0;
+	padding: 0;
+	display: flex;  
+	justify-content: center;
 	align-items: center;
 	list-style: none;
-  font-weight: bold;
+	font-weight: bold;
 	font-family: arial;
-  font-size: 18px;
+	font-size: 18px;        
 }
-
-.menu li {
+.menu ul a {
+	width: auto;
 	color: #EDB852;
-	padding: 20px;
+	padding: 30px 20px 20px 10px;
 	margin-left: 10px;
 	margin: 5px;
 	transition: margin 0.5s ease-out;
-	border-radius: 10px
+	border-radius: 10px;
 }
-
-.menu li:hover {
+.menu ul a:hover {
 	color: rgb(0, 0, 0);
 	background-color: #EDB852;
 	padding: 13px 20px;
 	margin-left: 10px;
 	margin-right: 10px;
 	border-radius: 10px;
-	margin-top: 0px;
 }
-
+#menuToggle {
+	display: none;
+}
+.menu-icon {
+	display: none;
+}
 
 footer {
 	background-color: #13181B;
 }
 
 .contenuFooter {
+	margin: auto;
 	max-width: 1500px;
-  max-height: 120px;
-  display: flex;
+	max-height: 120px;
+	display: flex;
 	text-align: center;
-  align-items: center;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -88,8 +102,96 @@ footer {
 	font-family: arial;
 }
 
+@media only screen and (max-width: 1000px){
+
+	.menu {
+		width: 100%;
+		height: auto;
+	}
+	.menu ul {
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s;
+	}
+
+	.menu ul a {
+		width: 200px;
+		height: 50px;
+		background-color: #092539;
+		color: #EDB852;
+		border-color: #10697F;
+		border-width: 1px;
+		border-style: solid;
+		padding: 2% 3% 1%;
+		margin: 2px;
+	}
+	.menu ul li {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.menu-icon {
+		margin: 15px 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		line-height: 60px;
+	}
+
+	#menuToggle:checked ~ ul {
+		max-height: 600px;
+	}
+	.menu-icon img {
+		margin:auto;
+	}
+}
+
 /* -- Fin CSS commun à chaque page -- */
 
 /* -- Début CSS contenu -- */
+
+#accueil {
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	display:flex;
+	justify-content: center;
+}
+
+.background {
+	max-width: 1500px;
+	max-height: 1080px;
+	height: 150rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-image: linear-gradient(to bottom, rgba(9, 37, 57, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, .2), rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)),
+	url(../Images/TFT_fond.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #EDB852;
+	font-family: arial;
+}
+
+.background h1 {
+	padding: 0 30%;
+}
+
+.background p {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0 20%;
+	text-indent: 30px;
+}
 
 /* -- Fin CSS Contenu -- */

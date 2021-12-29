@@ -165,6 +165,13 @@ footer {
 .main {
 	display:flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+}
+.contenu {
+	display: flex;
+	flex-direction: row;
 }
 
 .background {
@@ -174,7 +181,8 @@ footer {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	align-items: center;
+	justify-content: space-evenly;
 	background-image: linear-gradient(to bottom, rgba(9, 37, 57, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, .2), rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)),
 	url(../Images/TFT_fond.jpg);
 	background-position: center;

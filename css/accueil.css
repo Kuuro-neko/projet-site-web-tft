@@ -1,6 +1,6 @@
 /* -- Début CSS commun à chaque page -- */
 body {
-	background-color: black;
+	background-color: #000000;
 }
 
 * {
@@ -28,6 +28,7 @@ li {
 	left: 0;
 	margin: auto;
 	width: 100%;
+	border-bottom: thick solid #10697F;
 }
 
 .logo {

@@ -157,6 +157,9 @@ footer {
 
 /* -- Début CSS contenu -- */
 
+:root{
+	--item-select-color: aqua;
+}
 
 #accueil {
 	display: flex;
@@ -263,7 +266,7 @@ iframe {
 }
 
 [type=checkbox]{
-	/*visibility: hidden;*/
+	visibility: hidden;
 }
 
 input:checked ~ table tr {
@@ -275,40 +278,85 @@ thead tr th {
 	margin: auto;
 }
 
+/* BF Glaive */
 input#bfg:checked ~ table tr.bfg {
 	display: inherit;
 }
 
+input#bfg:checked ~ label[for=bfg] {
+	color: var(--item-select-color);
+}
+
+/* Arc courbe */
 input#bow:checked ~ table tr.bow {
 	display: inherit;
 }
 
+input#bow:checked ~ label[for=bow] {
+	color: var(--item-select-color);
+}
+
+/* Baguette trop grosse */
 input#rod:checked ~ table tr.rod {
 	display: inherit;
 }
 
+input#rod:checked ~ label[for=rod] {
+	color: var(--item-select-color);
+}
+
+/* Gants d'entrainement */
 input#gant:checked ~ table tr.gant {
 	display: inherit;
 }
 
+input#gant:checked ~ label[for=gant] {
+	color: var(--item-select-color);
+}
+
+/* Larme de la déesse */
 input#tear:checked ~ table tr.tear {
 	display: inherit;
 }
 
+input#tear:checked ~ label[for=tear] {
+	color: var(--item-select-color);
+}
+
+/* Ceinture de géant */
 input#belt:checked ~ table tr.belt {
 	display: inherit;
 }
 
+input#belt:checked ~ label[for=belt] {
+	color: var(--item-select-color);
+}
+
+/*  Cotte de mailles */
 input#mail:checked ~ table tr.mail {
 	display: inherit;
 }
 
+input#mail:checked ~ label[for=mail] {
+	color: var(--item-select-color);
+}
+
+/* Mantea ude négatron */
 input#nega:checked ~ table tr.nega {
 	display: inherit;
 }
 
+input#nega:checked ~ label[for=nega] {
+	color: var(--item-select-color);
+}
+
+/* Spatule */
 input#spat:checked ~ table tr.spat {
 	display: inherit;
+}
+
+input#spat:checked ~ label[for=spat] {
+	color: var(--item-select-color);
 }
 
 .itemicon {

@@ -56,7 +56,7 @@ li {
 	list-style: none;
 	font-weight: bold;
 	font-family: arial;
-	font-size: 18px;        
+	font-size: 18px;
 }
 .menu ul a {
 	width: auto;
@@ -103,7 +103,7 @@ footer {
 }
 
 @media only screen and (max-width: 1000px){
-
+	
 	.menu {
 		width: 100%;
 		height: auto;
@@ -116,7 +116,7 @@ footer {
 		overflow: hidden;
 		transition: max-height 0.3s;
 	}
-
+	
 	.menu ul a {
 		width: 200px;
 		height: 50px;
@@ -133,7 +133,7 @@ footer {
 		display: flex;
 		justify-content: flex-end;
 	}
-
+	
 	.menu-icon {
 		margin: 15px 20px;
 		display: flex;
@@ -144,7 +144,7 @@ footer {
 		right: 0;
 		line-height: 60px;
 	}
-
+	
 	#menuToggle:checked ~ ul {
 		max-height: 600px;
 	}
@@ -156,6 +156,7 @@ footer {
 /* -- Fin CSS commun à chaque page -- */
 
 /* -- Début CSS contenu -- */
+
 
 #accueil {
 	display: flex;
@@ -228,8 +229,65 @@ footer {
 }
 
 .contenu p {
-	padding: 1% 3%;
+	padding: 1% 3% 1% 1%;
 	width: 120%;
 	text-align: justify;
+}
+
+.vertical {
+	border-left: 6px solid #EDB852;
+	height: 80%;
+	border-radius: 10px;
+}
+
+iframe {
+	margin-left: 3%;
+}
+
+/* Tableau des item */ 
+[type="checkbox"]{
+	visibility: hidden;
+}
+
+.comboitem1 {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: flex-end;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s;
+}
+
+input#item1:checked ~ .comboitem1 {
+	max-height: 600px;
+}
+
+.comboitem2 {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: flex-end;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s;
+}
+
+input#item2:checked ~ .comboitem2 {
+	max-height: 600px;
+}
+
+.comboitem3 {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: flex-end;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s;
+}
+
+input#item3:checked ~ .comboitem3 {
+	max-height: 600px;
 }
 /* -- Fin CSS Contenu -- */

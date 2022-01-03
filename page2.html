@@ -6,6 +6,7 @@
 	<meta name="description" content="Site teamfighttactics projet iut toulouse">
 	<meta name="keywords" content="HTML, CSS, TeamFightTactics">
 	<meta name="author" content="Clicheroux Shayne & Gonzalez Oropeza Gilles">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TeamFightTactics accueil</title>
 	<link rel="stylesheet" href="./css/page2.css">
 	<link rel="icon" href="./images/TFT_icon.png" />
@@ -13,26 +14,24 @@
 
 <body>
 	
-	<header class="parent">
-		<div class="navbar">
-			<div class="logo">
-				<picture>
-					<img src="./images/TFT_logo.png" alt="logo" height="50px">
-				</picture>
-			</div>
-			<div class="menu">
-				<ul>
-					<li><a href="index.html" class="pageCourante">Accueil</a>
-					</li>
-					<li><a href="page1.html">Riot games</a>
-					</li>
-					<li><a href="page2.html">Principe du jeu</a>
-					</li>
-					<li><a href="page3.html">Scène e-sport</a>
-					</li>
-				</ul>
-			</div>
+	<header class="navbar">
+		<div class="logo">
+			<img src="./images/TFT_logo.png" alt="logo" height="50px">
 		</div>
+		<nav class="menu">
+			<input type="checkbox" id="menuToggle">
+			<label for="menuToggle" class="menu-icon"><img src="./images/menu_icon.png" height="60px"></label>
+			<ul>
+				<li><a href="index.html" class="pageCourante">Accueil</a>
+				</li>
+				<li><a href="page1.html">Riot Games</a>
+				</li>
+				<li><a href="page2.html">Principe du jeu</a>
+				</li>
+				<li><a href="page3.html">Scène e-sport</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 	
 	<div class="main">
@@ -52,12 +51,18 @@
 		<div class="section">
 			<h1>Les objets</h1>
 			<p>Introduction aux item</p>
+			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/bfglaive.png" class="itemicon"> B.F. Glaive</label>
+			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/arccourbe.png" class="itemicon">Arc courbe</label>
+			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/baguette.png" class="itemicon">Baguette trop grosse</label>
+			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/gants.png" class="itemicon">Gants d'entraînement</label>
+			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/larmedeesse.png" class="itemicon">Larme de la déesse</label>
+			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/ceinturegeant.png" class="itemicon">Ceinture de géant</label>
+			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/cottemaille.png" class="itemicon">Cotte de mailles</label>
+			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/negatron.png" class="itemicon">Manteau de négatron</label>
+			<table></table>
+
 			<input type="checkbox" id="item1"><label for="item1"> Item 1</label>
-			<table class="comboitem1">
-				<tr><th>Item 1.a</th><td>Description item</td><td>Image combo</td></tr>
-				<tr><th>Item 1.b</th><td>Description item</td><td>Image combo</td></tr>
-				<tr><th>Item 1.c</th><td>Description item</td><td>Image combo</td></tr>
-			</table>
+			
 			<input type="checkbox" id="item2"><label for="item2"> Item 2</label>
 			<table class="comboitem2">
 				<tr><th>Item 2.a</th><td>Description item</td><td>Image combo</td></tr>

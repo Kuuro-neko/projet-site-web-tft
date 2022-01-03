@@ -1,6 +1,6 @@
 /* -- Début CSS commun à chaque page -- */
 body {
-	background-color: black;
+	background-color: #13181B;
 }
 
 * {
@@ -56,7 +56,7 @@ li {
 	list-style: none;
 	font-weight: bold;
 	font-family: arial;
-	font-size: 18px;
+	font-size: 18px;        
 }
 .menu ul a {
 	width: auto;
@@ -103,7 +103,7 @@ footer {
 }
 
 @media only screen and (max-width: 1000px){
-	
+
 	.menu {
 		width: 100%;
 		height: auto;
@@ -116,7 +116,7 @@ footer {
 		overflow: hidden;
 		transition: max-height 0.3s;
 	}
-	
+
 	.menu ul a {
 		width: 200px;
 		height: 50px;
@@ -133,7 +133,7 @@ footer {
 		display: flex;
 		justify-content: flex-end;
 	}
-	
+
 	.menu-icon {
 		margin: 15px 20px;
 		display: flex;
@@ -144,7 +144,7 @@ footer {
 		right: 0;
 		line-height: 60px;
 	}
-	
+
 	#menuToggle:checked ~ ul {
 		max-height: 600px;
 	}
@@ -174,18 +174,12 @@ footer {
 
 .background {
 	max-width: 1500px;
-	max-height: 1080px;
 	height: 150rem;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
-	
-	background-image: linear-gradient(to bottom, rgba(9, 37, 57, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, .2), rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)),
-	url(../Images/TFT_fond.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
 	color: #EDB852;
 	font-family: arial;
 }
@@ -245,9 +239,6 @@ iframe {
 }
 
 /* Tableau des item */ 
-[type="checkbox"]{
-	visibility: hidden;
-}
 
 .comboitem1 {
 	display: flex;
@@ -289,5 +280,9 @@ input#item2:checked ~ .comboitem2 {
 
 input#item3:checked ~ .comboitem3 {
 	max-height: 600px;
+}
+
+.itemicon {
+	height: 50px;
 }
 /* -- Fin CSS Contenu -- */

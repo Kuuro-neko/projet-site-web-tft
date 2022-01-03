@@ -270,7 +270,7 @@ input:checked ~ table tr {
 	display:none;
 }
 
-tr.comboitem th {
+thead tr th {
 	width: auto;
 	margin: auto;
 }

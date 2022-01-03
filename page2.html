@@ -50,30 +50,42 @@
 		
 		<div class="section">
 			<h1>Les objets</h1>
-			<p>Introduction aux item</p>
-			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/bfglaive.png" class="itemicon"> B.F. Glaive</label>
-			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/arccourbe.png" class="itemicon">Arc courbe</label>
-			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/baguette.png" class="itemicon">Baguette trop grosse</label>
-			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/gants.png" class="itemicon">Gants d'entraînement</label>
-			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/larmedeesse.png" class="itemicon">Larme de la déesse</label>
-			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/ceinturegeant.png" class="itemicon">Ceinture de géant</label>
-			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/cottemaille.png" class="itemicon">Cotte de mailles</label>
-			<input type="checkbox" id="item1"><label for="item1"><img src="images/items/negatron.png" class="itemicon">Manteau de négatron</label>
-			<table></table>
-
-			<input type="checkbox" id="item1"><label for="item1"> Item 1</label>
-			
-			<input type="checkbox" id="item2"><label for="item2"> Item 2</label>
-			<table class="comboitem2">
-				<tr><th>Item 2.a</th><td>Description item</td><td>Image combo</td></tr>
-				<tr><th>Item 2.b</th><td>Description item</td><td>Image combo</td></tr>
-				<tr><th>Item 2.c</th><td>Description item</td><td>Image combo</td></tr>
-			</table>
-			<input type="checkbox" id="item3"><label for="item3"> Item 3</label>
-			<table class="comboitem3">
-				<tr><th>Item 3.a</th><td>Description item</td><td>Image combo</td></tr>
-				<tr><th>Item 3.b</th><td>Description item</td><td>Image combo</td></tr>
-				<tr><th>Item 3.c</th><td>Description item</td><td>Image combo</td></tr>
+			<p>Dans le jeu, il existe différents objets que vous pouvez équiper à vos champions. Il en existe 9 qui servent de base pour créer d'autres objets plus puissants en combinant deux objets de base.</p>
+			<p>Voici les objets de base, cliquez dessus pour voir les combinaisons liées à un objet en particulier :</p>
+			<input type="checkbox" id="bfg"><label for="bfg"><img src="images/items/bfglaive.png" class="itemicon"> B.F. Glaive</label>
+			<input type="checkbox" id="bow"><label for="bow"><img src="images/items/arccourbe.png" class="itemicon">Arc courbe</label>
+			<input type="checkbox" id="rod"><label for="rod"><img src="images/items/baguette.png" class="itemicon">Baguette trop grosse</label>
+			<input type="checkbox" id="gant"><label for="gant"><img src="images/items/gants.png" class="itemicon">Gants d'entraînement</label>
+			<input type="checkbox" id="tear"><label for="tear"><img src="images/items/larmedeesse.png" class="itemicon">Larme de la déesse</label>
+			<input type="checkbox" id="belt"><label for="belt"><img src="images/items/ceinturegeant.png" class="itemicon">Ceinture de géant</label>
+			<input type="checkbox" id="mail"><label for="mail"><img src="images/items/cottemaille.png" class="itemicon">Cotte de mailles</label>
+			<input type="checkbox" id="nega"><label for="nega"><img src="images/items/negatron.png" class="itemicon">Manteau de négatron</label>
+			<input type="checkbox" id="spat"><label for="spat"><img src="images/items/spatule.png" class="itemicon">Spatule</label>
+			<table class="itemcombo">
+				<thead>
+					<tr class="bfg bow rod gant tear belt mail nega spat">
+						<th>Icone</th>
+						<th>Nom</th>
+						<th>Description</th>
+						<th>Combinaison</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="bfg"><td><img src="images/items/funeste.png" class="itemicon"></td><th>Lame funeste</th><td>Chaque fois que le porteur élimine un ennemi ou participe à une élimination, il gagne +15 dégâts d’attaque jusqu’à la fin du combat. Cet effet est cumulable à l’infini.</td><td><img src="images/items/bfglaive.png" class="itemicon"> + <img src="images/items/bfglaive.png" class="itemicon"></td></tr>
+					<tr class="bfg bow"><td><img src="images/items/tueurgeant.png" class="itemicon"></td><th>Tueur de géants</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class="bfg rod"><td><img src="images/items/pistolame.png" class="itemicon"></td><th>Pistolame Hextech</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class="bfg gant"><td><img src="images/items/infini.png" class="itemicon"></td><th>Lame d'infini</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class="bfg tear"><td><img src="images/items/shojin.png" class="itemicon"></td><th>Lance de Shojin</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class="bfg belt"><td><img src="images/items/zekes.png" class="itemicon"></td><th>Blason de Zeke</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class="bfg mail"><td><img src="images/items/ange.png" class="itemicon"></td><th>Ange gardien</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class="bfg nega"><td><img src="images/items/soifdesang.png" class="itemicon"></td><th>Soif-de-sang</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class="bfg spat"><td><img src="images/items/imperial.png" class="itemicon"></td><th>Emblème d'Imperial</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class=""><td><img src="images/items/" class="itemicon"></td><th>Nom</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class=""><td><img src="images/items/" class="itemicon"></td><th>Nom</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class=""><td><img src="images/items/" class="itemicon"></td><th>Nom</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class=""><td><img src="images/items/" class="itemicon"></td><th>Nom</th><td>Description item</td><td>Image + Image</td></tr>
+					<tr class=""><td><img src="images/items/" class="itemicon"></td><th>Nom</th><td>Description item</td><td>Image + Image</td></tr>
+				</tbody>
 			</table>
 		</div>
 		

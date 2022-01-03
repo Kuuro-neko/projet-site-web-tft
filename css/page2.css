@@ -239,50 +239,57 @@ iframe {
 }
 
 /* Tableau des item */ 
-
-.comboitem1 {
-	display: flex;
-	align-items: flex-end;
-	flex-direction: column;
-	justify-content: flex-end;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.3s;
+[type=checkbox]{
+	/*visibility: hidden;*/
 }
 
-input#item1:checked ~ .comboitem1 {
-	max-height: 600px;
+input:checked ~ table tr {
+	display:none;
 }
 
-.comboitem2 {
-	display: flex;
-	align-items: flex-end;
-	flex-direction: column;
-	justify-content: flex-end;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.3s;
+tr.comboitem th {
+	width: auto;
+	margin: auto;
 }
 
-input#item2:checked ~ .comboitem2 {
-	max-height: 600px;
+input#bfg:checked ~ table tr.bfg {
+	display: inherit;
 }
 
-.comboitem3 {
-	display: flex;
-	align-items: flex-end;
-	flex-direction: column;
-	justify-content: flex-end;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.3s;
+input#bow:checked ~ table tr.bow {
+	display: inherit;
 }
 
-input#item3:checked ~ .comboitem3 {
-	max-height: 600px;
+input#rod:checked ~ table tr.rod {
+	display: inherit;
+}
+
+input#gant:checked ~ table tr.gant {
+	display: inherit;
+}
+
+input#tear:checked ~ table tr.tear {
+	display: inherit;
+}
+
+input#belt:checked ~ table tr.belt {
+	display: inherit;
+}
+
+input#mail:checked ~ table tr.mail {
+	display: inherit;
+}
+
+input#nega:checked ~ table tr.nega {
+	display: inherit;
+}
+
+input#spat:checked ~ table tr.spat {
+	display: inherit;
 }
 
 .itemicon {
-	height: 50px;
+	height: 40px;
 }
+
 /* -- Fin CSS Contenu -- */

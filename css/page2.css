@@ -262,20 +262,25 @@ h2 {
 label.choixitem {
 	width: 50%;
 	height: 45px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+	display: grid;
 	padding: 2px 0;
+	grid-template-columns: 10% 31% 59%;
 }
 
 label.choixitem:hover {
 	color: #FEDC87;
 }
-
+.choixitem b{
+	padding: 0;
+	align-self: center;
+}
 .choixitem p{
 	padding: 0;
+	padding-left: 10px;
+	align-self: center;
 	font-weight: unset;
 	font-size:medium;
+	text-indent: 0;
 }
 
 .listeitembase {
@@ -297,6 +302,8 @@ input:checked ~ table tr {
 
 table.itemcombo {
 	margin-top: 1%;
+	table-layout: auto;
+	width: 100%;
 }
 
 table.itemcombo tr {

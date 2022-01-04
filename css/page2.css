@@ -257,7 +257,7 @@ iframe {
 
 /* Tableau des item */ 
 .choixitem{
-	width: 80%;
+	width: 50%;
 	display: flex;
 	align-items: center;
 }
@@ -274,6 +274,10 @@ input:checked ~ table tr {
 	display:none;
 }
 
+table.itemcombo {
+	margin-top: 1%;
+}
+
 thead tr th {
 	width: auto;
 	margin: auto;
@@ -281,7 +285,7 @@ thead tr th {
 
 /* BF Glaive */
 input#bfg:checked ~ table tr.bfg {
-	display: inherit;
+	display: table-row;
 }
 
 input#bfg:checked ~ label[for=bfg] {
@@ -290,7 +294,7 @@ input#bfg:checked ~ label[for=bfg] {
 
 /* Arc courbe */
 input#bow:checked ~ table tr.bow {
-	display: inherit;
+	display: table-row;
 }
 
 input#bow:checked ~ label[for=bow] {
@@ -299,7 +303,7 @@ input#bow:checked ~ label[for=bow] {
 
 /* Baguette trop grosse */
 input#rod:checked ~ table tr.rod {
-	display: inherit;
+	display: table-row;
 }
 
 input#rod:checked ~ label[for=rod] {
@@ -308,7 +312,7 @@ input#rod:checked ~ label[for=rod] {
 
 /* Gants d'entrainement */
 input#gant:checked ~ table tr.gant {
-	display: inherit;
+	display: table-row;
 }
 
 input#gant:checked ~ label[for=gant] {
@@ -317,7 +321,7 @@ input#gant:checked ~ label[for=gant] {
 
 /* Larme de la déesse */
 input#tear:checked ~ table tr.tear {
-	display: inherit;
+	display: table-row;
 }
 
 input#tear:checked ~ label[for=tear] {
@@ -326,7 +330,7 @@ input#tear:checked ~ label[for=tear] {
 
 /* Ceinture de géant */
 input#belt:checked ~ table tr.belt {
-	display: inherit;
+	display: table-row;
 }
 
 input#belt:checked ~ label[for=belt] {
@@ -335,7 +339,7 @@ input#belt:checked ~ label[for=belt] {
 
 /*  Cotte de mailles */
 input#mail:checked ~ table tr.mail {
-	display: inherit;
+	display: table-row;
 }
 
 input#mail:checked ~ label[for=mail] {
@@ -344,7 +348,7 @@ input#mail:checked ~ label[for=mail] {
 
 /* Mantea ude négatron */
 input#nega:checked ~ table tr.nega {
-	display: inherit;
+	display: table-row;
 }
 
 input#nega:checked ~ label[for=nega] {
@@ -353,7 +357,7 @@ input#nega:checked ~ label[for=nega] {
 
 /* Spatule */
 input#spat:checked ~ table tr.spat {
-	display: inherit;
+	display: table-row;
 }
 
 input#spat:checked ~ label[for=spat] {

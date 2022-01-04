@@ -159,7 +159,7 @@ footer {
 /* -- Début CSS contenu -- */
 
 :root{
-	--item-select-color: aqua;
+	--item-select-color: #0fc4d8;
 }
 
 #accueil {
@@ -194,7 +194,6 @@ footer {
 
 .background p {
 	font-size: 20px;
-	font-weight: bold;
 	padding: 0 20%;
 	text-indent: 30px;
 }
@@ -256,18 +255,40 @@ iframe {
 }
 
 /* Tableau des item */ 
-.choixitem{
+h2 {
+	font-size: large;
+}
+
+label.choixitem {
 	width: 50%;
+	height: 45px;
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
+	padding: 2px 0;
+}
+
+label.choixitem:hover {
+	color: #FEDC87;
 }
 
 .choixitem p{
 	padding: 0;
+	font-weight: unset;
+	font-size:medium;
+}
+
+.listeitembase {
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 240px;
+	width: 100%;
 }
 
 [type=checkbox]{
-	visibility: hidden;
+	display: none;
+	
 }
 
 input:checked ~ table tr {
@@ -276,6 +297,10 @@ input:checked ~ table tr {
 
 table.itemcombo {
 	margin-top: 1%;
+}
+
+table.itemcombo tr {
+	background-color: #0d334e;
 }
 
 thead tr th {
@@ -288,7 +313,7 @@ input#bfg:checked ~ table tr.bfg {
 	display: table-row;
 }
 
-input#bfg:checked ~ label[for=bfg] {
+input#bfg:checked ~ div label[for=bfg] {
 	color: var(--item-select-color);
 }
 
@@ -297,7 +322,7 @@ input#bow:checked ~ table tr.bow {
 	display: table-row;
 }
 
-input#bow:checked ~ label[for=bow] {
+input#bow:checked ~ div label[for=bow] {
 	color: var(--item-select-color);
 }
 
@@ -306,7 +331,7 @@ input#rod:checked ~ table tr.rod {
 	display: table-row;
 }
 
-input#rod:checked ~ label[for=rod] {
+input#rod:checked ~ div label[for=rod] {
 	color: var(--item-select-color);
 }
 
@@ -315,7 +340,7 @@ input#gant:checked ~ table tr.gant {
 	display: table-row;
 }
 
-input#gant:checked ~ label[for=gant] {
+input#gant:checked ~ div label[for=gant] {
 	color: var(--item-select-color);
 }
 
@@ -324,7 +349,7 @@ input#tear:checked ~ table tr.tear {
 	display: table-row;
 }
 
-input#tear:checked ~ label[for=tear] {
+input#tear:checked ~ div label[for=tear] {
 	color: var(--item-select-color);
 }
 
@@ -333,7 +358,7 @@ input#belt:checked ~ table tr.belt {
 	display: table-row;
 }
 
-input#belt:checked ~ label[for=belt] {
+input#belt:checked ~ div label[for=belt] {
 	color: var(--item-select-color);
 }
 
@@ -342,7 +367,7 @@ input#mail:checked ~ table tr.mail {
 	display: table-row;
 }
 
-input#mail:checked ~ label[for=mail] {
+input#mail:checked ~ div label[for=mail] {
 	color: var(--item-select-color);
 }
 
@@ -351,7 +376,7 @@ input#nega:checked ~ table tr.nega {
 	display: table-row;
 }
 
-input#nega:checked ~ label[for=nega] {
+input#nega:checked ~ div label[for=nega] {
 	color: var(--item-select-color);
 }
 
@@ -360,7 +385,7 @@ input#spat:checked ~ table tr.spat {
 	display: table-row;
 }
 
-input#spat:checked ~ label[for=spat] {
+input#spat:checked ~ div label[for=spat] {
 	color: var(--item-select-color);
 }
 

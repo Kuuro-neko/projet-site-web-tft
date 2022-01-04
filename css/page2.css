@@ -172,7 +172,8 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 300rem;
+	height: auto;
+	padding-top: 150px;
 }
 
 
@@ -205,6 +206,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin-top: 4%;
 }
 
 .section h1 {
@@ -240,19 +242,32 @@ footer {
 
 .contenu p {
 	padding: 1% 3% 1% 1%;
-	width: 120%;
+	width: 80%;
 	text-align: justify;
 }
 
-.vertical {
-	border-left: 6px solid #EDB852;
-	height: 80%;
+#vertical {
+	border: thick solid #EDB852;
+	height: 250px;
 	border-radius: 10px;
 }
 
 iframe {
 	margin-left: 3%;
+	width: 90%;
+	height: 300px;
 }
+
+@media only screen and (max-width: 1000px){
+	.contenu {
+		flex-direction: column;
+	}
+
+	#vertical {
+		display: none;
+	}
+}
+
 
 /* Tableau des item */ 
 h2 {

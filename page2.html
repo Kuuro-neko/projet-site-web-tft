@@ -40,7 +40,7 @@
 			<div class="section">
 				<h1>Principe du jeu</h1>
 				<div class="contenu">
-					<p>Teamfight Tactics est un jeu de combat JcJ au tour par tour où vous sélectionnez une équipe qui se battra automatiquement en votre nom. </br> &emsp;&emsp;Les individus s'affrontent en duel jusqu'à ce qu'il ne reste qu'un seul joueur. Vous gagnez en sélectionnant la meilleure équipe de champions dans une réserve commune, en les équipant d'objets puissants, en gérant vos revenus en or pour acheter la concurrence et en plaçant votre équipe en formations gagnantes. Il y a un nombre de stratégies gagnantes illimitées, vous devrez donc vous adapter à différentes situations dans chaque partie pour avoir le dessus.</p>
+					<p>Teamfight Tactics est un jeu de combat JcJ au tour par tour où vous sélectionnez une équipe qui se battra automatiquement en votre nom sur un plateau composé de cases. </br> &emsp;&emsp;Les individus s'affrontent en duel jusqu'à ce qu'il ne reste qu'un seul joueur. Vous gagnez en sélectionnant la meilleure équipe de champions dans une réserve commune, en les équipant d'objets puissants, en gérant vos revenus en or pour acheter la concurrence et en plaçant votre équipe en formations gagnantes. Il y a un nombre de stratégies gagnantes illimitées, vous devrez donc vous adapter à différentes situations dans chaque partie pour avoir le dessus.</p>
 					<div id="vertical"></div>
 					<iframe src="https://www.youtube.com/embed/EKwK_ilX754"></iframe>
 				</div>
@@ -49,8 +49,115 @@
 			<div class="section">
 				<h1>Les champions, classes et origines</h1>
 				<div class="contenu">
-					<p>Dans le jeu, divers champions issus de League of Legends peuvent être achetés par le joueur pour créer son équipe. Ces champions possèdent des classes et origines en fonction de leur rôle dans League of Legends et de leur histoire, voire même du skin du champion qui a été implémenté dans TeamFightTactics</p>
-					<p>Les classes, comme les origines confèrent des bonus à l'équipe du joueurs en fonction du nombre de champions issus d'une même classe ou origine, ainsi une stratégie efficace est souvent de se concentrer sur une classe ou origine pour profiter de puissants bonus. Attention cependant, si plusieurs personnes se concentrent sur la même classe ou origine, la stratégie peut devenir risquée, le stock de champions achetables étant commun à tous les joueurs !</p>			
+					<div class="introorigines">
+						<p>Dans le jeu, divers champions issus de League of Legends peuvent être achetés par le joueur pour créer son équipe. Ces champions possèdent des classes et origines en fonction de leur rôle dans League of Legends et de leur histoire, voire même du skin du champion qui a été implémenté dans TeamFightTactics</p>
+						<p>Les <em>classes</em>, comme les <em>origines</em> confèrent des bonus à l'équipe du joueurs, devenant plus puissant en fonction du nombre de champions issus d'une même classe ou origine. Ainsi une stratégie efficace peut être de se concentrer sur une classe ou origine pour profiter de puissants bonus. Attention cependant, si plusieurs personnes se concentrent sur la même classe ou origine, la stratégie peut devenir risquée, le stock de champions achetables étant commun à tous les joueurs !</p>			
+						<p>Voici les classes et origines du set <em>Gadget en folie</em> qui est le set actuel :</p>
+						<div class="listeorigines">
+							<div id="classes">
+								<h2>Classes :</h2>
+								<table>
+									<tr>
+										<th>Assassin</th>
+										<td>Les Assassins sautent vers la dernière ligne adverse au début du combat. De plus, leurs compétences infligents des critiques et leur chances et dégats critiques sont améliorées.</td>
+									</tr>
+									<tr>
+										<th>Innovateur</th>
+										<td>Les champions Innovateurs construisent un compagnon mécanique qui rejoint la bataille.</td>
+									</tr>
+									<tr>
+										<th>Arcaniste</th>
+										<td>Les Arcanistes augmentent la puissance de votre équipe.</td>
+									</tr>
+									<tr>
+										<th>Sniper</th>
+										<td>Les Snipers infligent un pourcentage de dégâts bonus par cases qui les séparent de leur cible.</td>
+									</tr>
+									<tr>
+										<th>Challenger</th>
+										<td>Les Challengers gagnent en vitesse d'attaque. De plus, ils se jettent sur un cible à chaque participation à une élimination et le bonus est doublé pendant 2,5 secondes.</td>
+									</tr>
+									<tr>
+										<th>Enchanteur</th>
+										<td> Tous les alliés gagnent un bonus de résistance magique et les Enchanteurs gagnent un bonus en pourcentage sur leurs soins et leurs boucliers.</td>
+									</tr>
+									<tr>
+										<th>Répétireur</th>
+										<td>Les attaques des Répétireurs infligent des dégats améliorés et ont une probabilité d'attaquer deux fois au lieu d'une.</td>
+									</tr>
+									<tr>
+										<th>Garde du corps</th>
+										<td>Les Gardes du corps ont un bonus d'armure. Peu après le début du combat, ils provoquent les ennemis autour d'eux, les forçant à les attaquer.</td>
+									</tr>
+									<tr>
+										<th>Combattant</th>
+										<td>Votre équipe gagne des PV bonus. Les Combattants gagnent le double de ce bonus.</td>
+									</tr>
+									<tr>
+										<th>Protecteur</th>
+										<td>Les Protecteurs gagnent un bouclier à hauteur d'un certain pourcentage de leurs PV max pendant 6 secondes lorsqu'ils lancent un sort.</td>
+									</tr>
+									<tr>
+										<th>Érudit</th>
+										<td>Votre équipe gagne du mana toutes les 2 secondes.</td>
+									</tr>
+								</table>
+							</div>
+							<div id="origines">
+								<h2>Origines :</h2>
+								<table>
+									<tr>
+										<th>Mercenaire</th>
+										<td>Vous avez un coffre au trésor qui s'ouvre lorsque vous remportez un combat contre un joueur dont le contenu s'améliore au fil du temps si vous ne l'ouvrez pas.</td>
+									</tr>
+									<tr>
+										<th>Impérial</th>
+										<td>Au début du combat, l'Impérial qui a infligé le plus de dégâts au combat précédent devient le Tyran et voit ses statistiques améliorées.</td>
+									</tr>
+									<tr>
+										<th>Yordle</th>
+										<td>Après chaque combat contre un joueur, un Yordle aléatoire est ajouté à votre banc de champions gratuitement. De plus, à 6 Yordles, leurs sorts coûtent 20% moins de mana.</td>
+									</tr>
+									<tr>
+										<th>Étudiant</th>
+										<td>Les étudiants combattent avec un bonus de dégâts et de puissance. De plus, à chaque sort lancé par un allié, leur puissance augmente.</td>
+									</tr>
+									<tr>
+										<th>Techno-Chimiste</th>
+										<td>Lorsqu'ils tombent sous la barre des 75 % PV, les Techno-Chimistes gagnent un puissant bonus en statistiques pendant une durée dépendant du nombre de Techno-Chimistes possédés.</td>
+									</tr>
+									<tr>
+										<th>Mécanique</th>
+										<td>Votre équipe gagne en vitesse d'attaque.</td>
+									</tr>
+									<tr>
+										<th>Colosse</th>
+										<td>Les Colosses sont plus grands, plus puissants et immunisés aux effets de contrôle. Néanmoins, chaque Colosse recquiert deux places dans l'équipe.</td>
+									</tr>
+									<tr>
+										<th>Justicier</th>
+										<td>Les Justiciers emprisonnent des ennemis au début du combat. Les ennemis emprisonnés se libèrent après 4 secondes, ou après avoir perdu 30 % de leurs PV max.</td>
+									</tr>
+									<tr>
+										<th>Mutant</th>
+										<td>Les Mutants ont des effets différents à chaque partie.</td>
+									</tr>
+									<tr>
+										<th>Ferrailleur</th>
+										<td>Au début du combat, certains objets de bases tenus par les champions se transforment en objets complets. De plus, votre équipe gagne également un bouclier en fonction du nombre d'objets de base équipés.</td>
+									</tr>
+									<tr>
+										<th>Pègre</th>
+										<td>Certains alliés sont cachés dans les ombres, gagnant 50 armure et résistance magique et 25 % d'omnivampirisme.</td>
+									</tr>
+									<tr>
+										<th>Vedette</th>
+										<td>Les Vedettes révèlent une case sur le champ de bataille. L'unité qui se tient dans cette case gagne des bonus au début du combat.</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		

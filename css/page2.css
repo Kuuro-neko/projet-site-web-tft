@@ -253,6 +253,43 @@ footer {
 	text-align: justify;
 }
 
+.introorigines p {
+	width: 100%;
+}
+
+.listeorigines {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+#classes {
+	padding-right: 0.5%;
+}
+
+#origines {
+	padding-left: 0.5%;
+}
+
+.listeorigines div {
+	width: 50%;
+}
+
+.listeorigines tr * {
+	padding: 1% 0;
+}
+
+.listeorigines td {
+	padding: 1%;
+	width: auto;
+}
+
 #vertical {
 	border: thick solid #EDB852;
 	height: 250px;
@@ -322,19 +359,14 @@ input:checked ~ table tr {
 	display:none;
 }
 
-table.itemcombo {
+table {
 	margin-top: 1%;
 	table-layout: auto;
 	width: 100%;
 }
 
-table.itemcombo tr {
+table tr {
 	background-color: #0d334e;
-}
-
-thead tr th {
-	width: auto;
-	margin: auto;
 }
 
 /* BF Glaive */

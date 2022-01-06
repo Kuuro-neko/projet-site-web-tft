@@ -16,6 +16,7 @@ a {
 	
 }
 
+
 li a {
 	text-decoration: none;
 }
@@ -25,6 +26,7 @@ li a {
 	margin: 150px 10% 100px 10%;
 	background-color: #092539;
 	padding: 10px 2%;
+	border-radius: 30px;
 }
 h1{
 	text-align: center;

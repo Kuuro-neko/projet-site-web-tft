@@ -233,6 +233,7 @@ footer {
 	padding: 1%;
 	margin: 0 50px 1% 50px;
 	width: 80%;
+	border-radius: 30px;
 }
 
 .contenu2 {
@@ -240,6 +241,7 @@ footer {
 	padding: 1%;
 	margin: 0 50px 100px 50px;
 	width: 80%;
+	border-radius: 30px;
 }
 
 .contenu2 p {

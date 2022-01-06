@@ -8,11 +8,13 @@ body {
   background-position: top;
   background-attachment: fixed;
 }
+
 .main {
     
     margin: 150px 10% 0 10%;
     background-color: #092539;
 }
+
 li a {
     text-decoration: none;
 }

@@ -8,6 +8,7 @@ body {
   background-position: top;
   background-attachment: fixed;
 }
+
 a {
 	color: inherit;
 	font-weight: bold;
@@ -15,10 +16,15 @@ a {
 
 }
 
+li a {
+    text-decoration: none;
+}
+
 .main {
     
-    margin: 150px 10% 0 10%;
+    margin: 150px 10% 100px 10%;
     background-color: #092539;
+	padding: 10px 2%;
 }
 h1{
 	 text-align: center;

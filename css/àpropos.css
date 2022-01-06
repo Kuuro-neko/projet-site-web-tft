@@ -4,35 +4,69 @@ body {
 	width: 100%;
 	background-image: url("../images/fond2.jpg");
 	background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+	background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
 }
+
 a {
 	color: inherit;
 	font-weight: bold;
 	text-decoration: underline;
-
-}
-
-.main {
-    
-    margin: 150px 10% 0 10%;
-    background-color: #092539;
-}
-h1{
-	 text-align: center;
-	 margin-bottom: 40px;
-}
-.texte{
-	color: #EDB852;
-	/*color: #FEDC87;*/
-	font-family:  cursive;
-	margin-left: auto;
-	margin-right: auto;
 	
 }
 
+
+li a {
+	text-decoration: none;
+}
+
+.main {
+	
+	margin: 150px 10% 100px 10%;
+	background-color: #092539;
+	padding: 10px 2%;
+	border-radius: 30px;
+}
+h1{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.texte{
+	color: #EDB852;
+	font-family:  cursive;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+#liste {
+	height: 380px;
+}
+
+#liste h2 {
+	width: 50%;
+}
+
+#liste a {
+	width: 50%;
+}
+
+@media only screen and (max-width: 1200px){
+	#liste {
+		height: auto;
+	}
+	
+	#liste h2 {
+		width: 100%;
+	}
+	
+	#liste a {
+		width: 100%;
+	}
+}
 
 
 /* Menu fixe */
@@ -45,6 +79,7 @@ h1{
 	left: 0;
 	margin: auto;
 	width: 100%;
+	border-bottom: thick solid #10697F;
 }
 
 .logo {
@@ -120,7 +155,7 @@ footer {
 }
 
 @media only screen and (max-width: 1000px){
-
+	
 	.menu {
 		width: 100%;
 		height: auto;
@@ -133,7 +168,7 @@ footer {
 		overflow: hidden;
 		transition: max-height 0.3s;
 	}
-
+	
 	.menu ul a {
 		width: 200px;
 		height: 50px;
@@ -150,7 +185,7 @@ footer {
 		display: flex;
 		justify-content: flex-end;
 	}
-
+	
 	.menu-icon {
 		margin: 15px 20px;
 		display: flex;
@@ -161,13 +196,17 @@ footer {
 		right: 0;
 		line-height: 60px;
 	}
-
+	
 	#menuToggle:checked ~ ul {
 		max-height: 600px;
 	}
 	.menu-icon img {
 		margin:auto;
 	}
+}
+
+h2 {
+	margin: 25px 0px 5px 0px;
 }
 
 /* -- Fin CSS commun à chaque page -- */

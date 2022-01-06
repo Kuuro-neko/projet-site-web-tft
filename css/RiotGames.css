@@ -8,11 +8,14 @@ body {
   background-position: top;
   background-attachment: fixed;
 }
+
 .main {
     
-    margin: 150px 10% 0 10%;
+    margin: 150px 10% 100px 10%;
     background-color: #092539;
+	border-radius: 30px;
 }
+
 li a {
     text-decoration: none;
 }
@@ -40,7 +43,6 @@ li a {
 	margin: 0;
 	padding: 0;
 }
-/* Remove formatting from links*/
 
 a {
 	color: inherit;
@@ -48,10 +50,8 @@ a {
 	text-decoration: underline;
 
 }
-/* Set a max width to the content*/
 
 .texte{
-	/*color: #10697F;*/
 	color: #EDB852;
 	font-family:  cursive;
 	margin-left: auto;
@@ -96,6 +96,7 @@ h1{
 	left: 0;
 	margin: auto;
 	width: 100%;
+	border-bottom: thick solid #10697F;
 }
 
 .logo {

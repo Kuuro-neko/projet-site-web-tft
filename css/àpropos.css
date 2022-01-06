@@ -8,83 +8,32 @@ body {
   background-position: top;
   background-attachment: fixed;
 }
-.main {
-    
-    margin: 150px 10% 0 10%;
-    background-color: #092539;
-}
-li a {
-    text-decoration: none;
-}
-
-.imj{
-	display: block;
-
-	max-width: 80%;
-	max-height: 80%;
- margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-
-}
-.légende{
-	text-align: center;
-	font-style: italic;
-	color: #EDB852;
-	margin-bottom:20px;
-}
-
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-/* Remove formatting from links*/
-
 a {
 	color: inherit;
 	font-weight: bold;
 	text-decoration: underline;
 
 }
-/* Set a max width to the content*/
 
+.main {
+    
+    margin: 150px 10% 0 10%;
+    background-color: #092539;
+}
+h1{
+	 text-align: center;
+	 margin-bottom: 40px;
+}
 .texte{
-	/*color: #10697F;*/
 	color: #EDB852;
+	/*color: #FEDC87;*/
 	font-family:  cursive;
 	margin-left: auto;
 	margin-right: auto;
 	
 }
 
-h1{
-	 text-align: center;
-	 margin-bottom: 20px;
-}
 
- p {
-	text-indent: 30px;
-
-    width: 80%;
-    margin: 0 10%;
-}
-
-
-.lien {
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  margin-bottom: 20px
-
-}
 
 /* Menu fixe */
 

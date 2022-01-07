@@ -222,4 +222,8 @@ footer {
 	}
 }
 
+footer a {
+	text-decoration: none;
+	font-weight: normal;
+}
 /* -- Fin CSS commun à chaque page -- */

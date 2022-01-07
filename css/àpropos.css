@@ -209,4 +209,8 @@ h2 {
 	margin: 25px 0px 5px 0px;
 }
 
+footer a {
+	text-decoration: none;
+	font-weight: normal;
+}
 /* -- Fin CSS commun à chaque page -- */

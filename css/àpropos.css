@@ -17,6 +17,10 @@ a {
 	
 }
 
+.texte a {
+	font-weight: normal;
+}
+
 
 li a {
 	text-decoration: none;

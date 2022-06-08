@@ -1,6 +1,6 @@
 # Site Teamfight Tactics
 
-Réalisé par **Gilles GONZALEZ OROPEZA** et **Shayne CLICHEROUX** dans le cadre du projet de développement web en A1105.
+Réalisé par **Gilles GONZALEZ OROPEZA** et **Shayne CLICHEROUX** dans le cadre du projet de développement web en A1105 à l'IUT Informatique de Toulouse.
 
 
 ### Développé en :
